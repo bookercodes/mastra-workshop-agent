@@ -6,9 +6,9 @@ const LUMA_API_BASE = 'https://public-api.luma.com/v1';
 
 const hostSchema = z.object({
   name: z.string().describe('Host name'),
-  role: z.string().optional().describe('Host role/title'),
+  company: z.string().optional().describe('Company or organization'),
   xHandle: z.string().optional().describe('X (Twitter) handle without @'),
-  linkedinUrl: z.string().optional().describe('LinkedIn profile URL'),
+  website: z.string().optional().describe('Personal or company website URL'),
 });
 
 interface UploadUrlResponse {
@@ -36,17 +36,17 @@ function getLumaHeaders(): Record<string, string> {
 
 function buildHostsSection(hosts: z.infer<typeof hostSchema>[]): string {
   return hosts.map(host => {
-    const lines: string[] = [];
-    const nameAndRole = host.role ? `${host.name}, ${host.role}` : host.name;
-    lines.push(nameAndRole);
+    const nameAndCompany = host.company ? `${host.name}, ${host.company}` : host.name;
+    const subItems: string[] = [];
     if (host.xHandle) {
-      lines.push(`x.com/${host.xHandle}`);
+      subItems.push(`  - x.com/${host.xHandle}`);
     }
-    if (host.linkedinUrl) {
-      lines.push(host.linkedinUrl);
+    if (host.website) {
+      subItems.push(`  - ${host.website}`);
     }
-    return lines.join('\n');
-  }).join('\n\n');
+    const line = `- ${nameAndCompany}`;
+    return subItems.length > 0 ? `${line}\n${subItems.join('\n')}` : line;
+  }).join('\n');
 }
 
 function buildDescription(
@@ -64,7 +64,7 @@ function buildDescription(
   parts.push('');
   parts.push(buildHostsSection(hosts));
   parts.push('');
-  parts.push('Recording and code examples will be available to everyone who registers.');
+  parts.push('*Recording and code examples will be available to everyone who registers.*');
 
   return parts.join('\n');
 }
