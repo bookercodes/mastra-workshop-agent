@@ -7,7 +7,7 @@ import { getLumaEventTool } from "../tools/get-luma-event-tool";
 import { uploadLumaImageTool } from "../tools/upload-luma-image-tool";
 import { searchSanityGuestsTool } from "../tools/search-sanity-guests-tool";
 import { createSanityGuestTool } from "../tools/create-sanity-guest-tool";
-import { descriptionWriterAgent } from "./description-writer-agent";
+import { descriptionWriterWorkflow } from "../workflows/description-writer-workflow";
 
 export const workshopHelperAgent = new Agent({
   id: "workshop-helper-agent",
@@ -44,15 +44,14 @@ When no date is specified:
 ## Writing Descriptions
 
 When a description is needed:
-1. Ask the description-writer-agent to write the description
-2. Provide it with the workshop title and topic
-3. Use the returned description when creating the event
+1. Run the description-writer-workflow with the workshop title and topic
+2. Use the returned description when creating the event
 
 ## Updating Events
 
 Ask for the event ID if not provided. Before making changes, call get-luma-event to see the current event details including the description. This lets you preserve existing information when updating.
 `,
-  model: "openai/gpt-5.2",
+  model: "openrouter/openai/gpt-5.4",
   tools: {
     createLumaEvent: createLumaEventTool,
     updateLumaEvent: updateLumaEventTool,
@@ -62,16 +61,22 @@ Ask for the event ID if not provided. Before making changes, call get-luma-event
     searchSanityGuests: searchSanityGuestsTool,
     createSanityGuest: createSanityGuestTool,
   },
-  agents: {
-    descriptionWriter: descriptionWriterAgent,
+  workflows: {
+    descriptionWriter: descriptionWriterWorkflow,
   },
   defaultOptions: {
-    requireToolApproval: true,
+    requireToolApproval: false,
   },
   memory: new Memory({
     options: {
       observationalMemory: {
-        model: "openai/gpt-5.2",
+        model: "openrouter/google/gemini-2.5-flash",
+        observation: {
+          messageTokens: 15000,
+        },
+        reflection: {
+          observationTokens: 20000,
+        },
       },
     },
   }),

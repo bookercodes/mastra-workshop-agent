@@ -1,5 +1,4 @@
 import { Agent } from "@mastra/core/agent";
-import { Memory } from "@mastra/memory";
 import { fetchWebPageTool } from "../tools/fetch-web-page-tool";
 
 export const descriptionWriterAgent = new Agent({
@@ -41,13 +40,8 @@ When the user gives follow-up feedback, refine the existing description — don'
 
 Pages you've already fetched are in your context — don't fetch them again. If you need more information, look at llms.txt (already in context) to find new pages to fetch.
 `,
-  model: "openai/gpt-5.2",
+  model: "openrouter/openai/gpt-5.4",
   tools: {
     fetchWebPage: fetchWebPageTool,
   },
-  memory: new Memory({
-    options: {
-      lastMessages: Number.MAX_SAFE_INTEGER,
-    },
-  }),
 });
