@@ -1,4 +1,5 @@
 import { Agent } from "@mastra/core/agent";
+import { Memory } from "@mastra/memory";
 import { fetchWebPageTool } from "../tools/fetch-web-page-tool";
 
 export const descriptionWriterAgent = new Agent({
@@ -31,6 +32,8 @@ Start with a punchy, relatable statement that names the problem the topic solves
 - Focus on practical outcomes people care about
 - Keep jargon minimal and widely understood
 - Warm and inclusive — we're hanging out, you're welcome to join
+- All workshops are virtual — never use in-person language like "be in the room"
+- Write in second person ("you'll learn", "you can") — never third person ("attendees will", "developers can")
 
 The reader should finish thinking "this solves a problem I have."
 
@@ -40,8 +43,9 @@ When the user gives follow-up feedback, refine the existing description — don'
 
 Pages you've already fetched are in your context — don't fetch them again. If you need more information, look at llms.txt (already in context) to find new pages to fetch.
 `,
-  model: "openrouter/openai/gpt-5.4",
+  model: "openrouter/anthropic/claude-opus-4.6",
   tools: {
     fetchWebPage: fetchWebPageTool,
   },
+  memory: new Memory(),
 });

@@ -44,7 +44,7 @@ function buildHostsSection(hosts: z.infer<typeof hostSchema>[]): string {
     const nameAndCompany = host.company ? `${host.name}, ${host.company}` : host.name;
     const subItems: string[] = [];
     if (host.xHandle) {
-      subItems.push(`  - x.com/${host.xHandle}`);
+      subItems.push(`  - https://x.com/${host.xHandle}`);
     }
     if (host.website) {
       subItems.push(`  - ${host.website}`);
@@ -64,6 +64,7 @@ function buildDescription(
     parts.push(customDescription);
   }
 
+  parts.push('');
   parts.push('---');
   parts.push('**Hosted by**');
   parts.push('');

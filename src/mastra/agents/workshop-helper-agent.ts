@@ -7,7 +7,7 @@ import { getLumaEventTool } from "../tools/get-luma-event-tool";
 import { uploadLumaImageTool } from "../tools/upload-luma-image-tool";
 import { searchSanityGuestsTool } from "../tools/search-sanity-guests-tool";
 import { createSanityGuestTool } from "../tools/create-sanity-guest-tool";
-import { descriptionWriterWorkflow } from "../workflows/description-writer-workflow";
+import { writeDescriptionTool } from "../tools/write-description-tool";
 
 export const workshopHelperAgent = new Agent({
   id: "workshop-helper-agent",
@@ -44,14 +44,15 @@ When no date is specified:
 ## Writing Descriptions
 
 When a description is needed:
-1. Run the description-writer-workflow with the workshop title and topic
-2. Use the returned description when creating the event
+1. Ask the description-writer agent to write the description
+2. Provide it with the workshop title and topic
+3. Use the returned description when creating the event
 
 ## Updating Events
 
 Ask for the event ID if not provided. Before making changes, call get-luma-event to see the current event details including the description. This lets you preserve existing information when updating.
 `,
-  model: "openrouter/openai/gpt-5.4",
+  model: "openrouter/anthropic/claude-opus-4.6",
   tools: {
     createLumaEvent: createLumaEventTool,
     updateLumaEvent: updateLumaEventTool,
@@ -60,9 +61,7 @@ Ask for the event ID if not provided. Before making changes, call get-luma-event
     uploadLumaImage: uploadLumaImageTool,
     searchSanityGuests: searchSanityGuestsTool,
     createSanityGuest: createSanityGuestTool,
-  },
-  workflows: {
-    descriptionWriter: descriptionWriterWorkflow,
+    writeDescription: writeDescriptionTool,
   },
   defaultOptions: {
     requireToolApproval: false,
@@ -71,6 +70,7 @@ Ask for the event ID if not provided. Before making changes, call get-luma-event
     options: {
       observationalMemory: {
         model: "openrouter/google/gemini-2.5-flash",
+        scope: "thread",
         observation: {
           messageTokens: 15000,
         },
