@@ -56,7 +56,7 @@ export const listLumaEventsTool = createTool({
     const allEvents: LumaEvent[] = [];
     let cursor: string | undefined;
 
-    while (allEvents.length < limit) {
+    while (true) {
       const url = cursor
         ? `${LUMA_API_BASE}/calendar/list-events?pagination_cursor=${cursor}`
         : `${LUMA_API_BASE}/calendar/list-events${params.toString() ? '?' + params.toString() : ''}`;
@@ -74,19 +74,22 @@ export const listLumaEventsTool = createTool({
       const data = await response.json() as LumaEventsResponse;
 
       for (const entry of data.entries) {
-        if (allEvents.length >= limit) break;
         allEvents.push(entry.event);
       }
 
-      if (!data.has_more || allEvents.length >= limit) {
+      if (!data.has_more || !data.next_cursor) {
         break;
       }
 
       cursor = data.next_cursor;
     }
 
+    const latestEvents = allEvents
+      .sort((a, b) => new Date(b.start_at).getTime() - new Date(a.start_at).getTime())
+      .slice(0, limit);
+
     return {
-      events: allEvents.map(event => ({
+      events: latestEvents.map(event => ({
         eventId: event.api_id,
         title: event.name,
         startAt: event.start_at,

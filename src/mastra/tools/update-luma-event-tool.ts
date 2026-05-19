@@ -129,7 +129,7 @@ export const updateLumaEventTool = createTool({
     title: z.string().optional().describe('New workshop title'),
     hosts: z.array(hostSchema).optional().describe('New array of hosts for the workshop'),
     description: z.string().optional().describe('New custom description body'),
-    startAt: z.string().optional().describe('New start date and time in ISO 8601 format'),
+    startAt: z.string().optional().describe('New start date and time in ISO 8601 format; for weekly workshops, use 17:00 Europe/London local time (DST-aware)'),
     duration: z.number().optional().describe('New duration in minutes'),
     coverImageUrl: z.string().optional().describe('URL to a new image to use as the event cover'),
   }),

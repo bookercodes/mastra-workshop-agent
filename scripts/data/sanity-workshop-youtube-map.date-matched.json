@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-04-24T20:57:00.243Z",
+  "total": 48,
+  "mappings": [
+    {
+      "sanityId": "ReSrd7SqmdV3lmrZOjnzfw",
+      "title": "Build an OpenClaw Agent with Mastra",
+      "eventDate": "2026-04-23T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/9n5zqwu9",
+      "youtubeUrl": "https://youtu.be/4wGZlzzzEBE"
+    },
+    {
+      "sanityId": "e4725d81-e0e8-4e84-ad20-41a8a1ba957e",
+      "title": "Building Agents With Economics That Scale",
+      "eventDate": "2026-04-16T16:30:00.000Z",
+      "lumaUrl": "https://luma.com/e5kess43",
+      "youtubeUrl": "https://www.youtube.com/watch?v=urvwWBgWZc8",
+      "youtubeTitleGuess": "Building Agents With Economics That Scale",
+      "dateMatchDaysDiff": 0.01,
+      "dateMatchedAt": "2026-04-24T20:57:00.242Z"
+    },
+    {
+      "sanityId": "qgBAe6h7zPwgI8si0qxPbl",
+      "title": "Track Agent Cost and Performance with Mastra Metrics",
+      "eventDate": "2026-04-02T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/8ioxd4v0",
+      "youtubeUrl": "https://youtu.be/opxPGsXcIZQ",
+      "youtubeTitleGuess": "TSAI Conference Preview, New Mastra Course, Claude code source code leak",
+      "dateMatchDaysDiff": 0.9,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "34273d81-f8da-4478-a4e1-c3feb79e0656",
+      "title": "Building Multi-Agent Architectures with Mastra",
+      "eventDate": "2026-03-26T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/nctl14q0",
+      "youtubeUrl": "https://youtu.be/FNb2fL9WhQg"
+    },
+    {
+      "sanityId": "VVVXRWk9VpOIE0PtXqmAD3",
+      "title": "Agent Harness: What it is, why it matters, and what it enables",
+      "eventDate": "2026-03-19T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/praw0674",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-ESSuPpJ5r8",
+      "youtubeTitleGuess": "Agent Harness: What it is, why it matters, and what it enables",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "grW8CxZR1pgWKDKsKoJTak",
+      "title": "Guardrails and beyond: Control the agent loop with Mastra processors",
+      "eventDate": "2026-03-12T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/jz42wrql",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4Vpp7xQYvl0",
+      "youtubeTitleGuess": "Guardrails and beyond: Control the agent loop with Mastra processors",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "62613e37-5264-4052-af8c-762c09f97d45",
+      "title": "Beyond vibes: Measuring your agent with evals",
+      "eventDate": "2026-03-05T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/v2z154fc",
+      "youtubeUrl": "https://youtu.be/Vla5LfmOOrM",
+      "youtubeTitleGuess": "Missile strikes cause Anthropic/AWS Outages, OpenAI vs Anthropic, Vercel vs. Cloudflare and AI news",
+      "dateMatchDaysDiff": 2.87,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "94c604d0-0858-4121-8fe6-fc6d9ae584b3",
+      "title": "Build your own coding agent",
+      "eventDate": "2026-02-19T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/5oinec4y",
+      "youtubeUrl": "https://www.youtube.com/watch?v=yph4kdD1G1w",
+      "youtubeTitleGuess": "Build your own coding agent workshop",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "3c153ae7-1bab-4457-8fd0-743972817a61",
+      "title": "Build agents with human-like memory",
+      "eventDate": "2026-02-12T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/u48tlf3v",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KrQORAsndpg",
+      "youtubeTitleGuess": "Build agents with human-like memory",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "dcd3e86b-efe8-479b-9e76-e2320008cecc",
+      "title": "Introduction to Workspaces",
+      "eventDate": "2026-02-05T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/9znbhes3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=QcQLiYlJuNQ",
+      "youtubeTitleGuess": "Introduction to Mastra Workspaces (workshop)",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "4iGjQnwqhdi0JChBKpjYlC",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2026-01-29T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/mjm45mrd",
+      "youtubeUrl": "https://youtu.be/_S4b6E1bNfQ",
+      "youtubeTitleGuess": "Mastra 1.0 Recap, Today I learned, ClawdBot, and the news!",
+      "dateMatchDaysDiff": 2.81,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "b54e6a86-e89d-4727-93b6-493e8b96132e",
+      "title": "Mastra 1.0 workshop",
+      "eventDate": "2026-01-21T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/nzj0r1rw",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vjx9_KfHimY",
+      "youtubeTitleGuess": "Mastra 1.0 is here - everything new (with the team behind the features)",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "37abd2e8-adde-4ab5-a209-3b994686ce8b",
+      "title": "Beyond vibes: Measuring your agent with evals",
+      "eventDate": "2025-12-18T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/z8zcul9t",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OHOZ5PgPj5M",
+      "youtubeTitleGuess": "Beyond vibes: Measuring your agent with evals",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "9467161e-f06a-4aa5-9d72-d3f095448da5",
+      "title": "Build a Slack Agent with Mastra",
+      "eventDate": "2025-12-04T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/glymub60",
+      "youtubeUrl": "https://www.youtube.com/watch?v=VgihjpmSxuk",
+      "youtubeTitleGuess": "Build a Slack Agent with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "8b1c7f69-a0c9-438a-91c5-5e90e4b87a93",
+      "title": "Build Multi-Agent Networks with Mastra",
+      "eventDate": "2025-11-27T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/6yinw19f",
+      "youtubeUrl": "https://youtu.be/FNb2fL9WhQg",
+      "youtubeTitleGuess": "Opus 4.5 vs Gemini 3, Agents in Slack, Phone a Farmer, Tony from Runloop - 50th episode!",
+      "dateMatchDaysDiff": 1.87,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "9GUciKnOR0cf8Ir9EwhKtT",
+      "title": "Mastra Studio workshop",
+      "eventDate": "2025-11-20T17:30:00.000Z",
+      "lumaUrl": "https://luma.com/7wd2dhb2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NCpuJLTT_Y0",
+      "youtubeTitleGuess": "Mastra Studio workshop",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "3b8698cb-a5a2-4ba6-bea7-5da0de853d6c",
+      "title": "Implement Guardrails in Mastra: Build Safer, Smarter Agents",
+      "eventDate": "2025-10-30T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/9kiliemw",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NuiAORmZJe0",
+      "youtubeTitleGuess": "Learn how to implement Guardrails in Mastra and build safer, smarter agents -",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "f24e4e40-9ef3-4aff-ba4f-c4d3ce4e9385",
+      "title": "Build agentic workflows with Mastra",
+      "eventDate": "2025-10-23T15:30:00.000Z",
+      "lumaUrl": "https://luma.com/dhhkvw75",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HGt8pVPpX9g",
+      "youtubeTitleGuess": "Build agentic workflows with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "39c6d63c-7cb6-410b-bb10-8a6a2f228b42",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-10-16T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/gbx7gn9o",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_S4b6E1bNfQ",
+      "youtubeTitleGuess": "Build and deploy your first agent with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "52f7ce61-296e-4ed8-b2bb-fdb3dee2ba6b",
+      "title": "Build agents that never forget with Mastra",
+      "eventDate": "2025-10-09T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/iag7197y",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6fQemXtNMIA",
+      "youtubeTitleGuess": "Build agents that never forget with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "61ccdc10-6a6b-46af-9883-69d69fd4ddb2",
+      "title": "Understanding Mastra's new streaming architecture",
+      "eventDate": "2025-10-02T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/rvk0dob5",
+      "youtubeUrl": "https://www.youtube.com/watch?v=z3esKKUpXPM",
+      "youtubeTitleGuess": "Master Streaming with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "x7AKQdsMTT5RY3O5CV93rN",
+      "title": "Build Production-Ready RAG Applications with Mastra",
+      "eventDate": "2025-09-18T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/y79cdbdg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=spZ7dvp-YRo",
+      "youtubeTitleGuess": "Build Production-Ready RAG Applications with Mastra",
+      "dateMatchDaysDiff": 0,
+      "dateMatchedAt": "2026-04-24T20:57:00.243Z"
+    },
+    {
+      "sanityId": "x55OSItMbFx92tINDq5agT",
+      "title": "Master AI Evaluation: Build and Run Evals with Mastra",
+      "eventDate": "2025-09-11T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/hbp6xkvu",
+      "youtubeUrl": "https://youtube.com/live/tKC37zZ7A9M"
+    },
+    {
+      "sanityId": "x7AKQdsMTT5RY3O5CV92kf",
+      "title": "Build an MCP Server with Mastra",
+      "eventDate": "2025-09-04T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/7alk9x3g",
+      "youtubeUrl": "https://youtube.com/live/415Qzt5_0SY"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr6tn",
+      "title": "Build Agentic Workflows with Mastra",
+      "eventDate": "2025-08-28T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/hzcofer3",
+      "youtubeUrl": "https://youtube.com/live/fWmSWSg848Q"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJXkl",
+      "title": "Building Agents with Mastra Templates",
+      "eventDate": "2025-07-31T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/wav8tlek",
+      "youtubeUrl": "https://youtube.com/live/MbSXBLWAhy0"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4KGC",
+      "title": "Agent Memory with Mastra",
+      "eventDate": "2025-07-24T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/n6w50v8s",
+      "youtubeUrl": "https://youtube.com/live/lxAhbxTEG-g"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4K6E",
+      "title": "Coding with Background Agents",
+      "eventDate": "2025-07-17T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/8dbx4qwj",
+      "youtubeUrl": "https://youtube.com/live/VrBtKOF3X_o"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4JwG",
+      "title": "Build Multi-Agent Networks with Mastra",
+      "eventDate": "2025-07-10T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/vmndqldc",
+      "youtubeUrl": "https://youtube.com/live/7hewaYAt058"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4JZ0",
+      "title": "Build Production-Ready RAG Applications with Mastra",
+      "eventDate": "2025-06-26T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/n4f7u8ex",
+      "youtubeUrl": "https://youtube.com/live/J6VnDPmBoNc"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr6Rf",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-06-18T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/qctgwz0h",
+      "youtubeUrl": "https://youtube.com/live/qosSxiCcSqI"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr6A5",
+      "title": "Build an MCP Server with Mastra",
+      "eventDate": "2025-06-12T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/sok0kx8p",
+      "youtubeUrl": "https://youtube.com/live/mLt5NX2epfM"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJWJ6",
+      "title": "Master AI Evaluation: Build and Run Evals with Mastra",
+      "eventDate": "2025-06-05T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/dmphluq0",
+      "youtubeUrl": "https://youtu.be/yXjepCT8AU0"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4IyS",
+      "title": "Build Agentic Workflows with Mastra",
+      "eventDate": "2025-05-28T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/5o2bhkf9",
+      "youtubeUrl": "https://youtube.com/live/GE0V75Ixy1Q"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr5sV",
+      "title": "Build Production-Ready RAG Applications with Mastra",
+      "eventDate": "2025-05-22T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/dtq2ox18",
+      "youtubeUrl": "https://youtube.com/live/ad2aEYh4g_Q"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJViB",
+      "title": "Build your first fullstack agent with Mastra+CopilotKit🪁",
+      "eventDate": "2025-05-09T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/yurxbj2m",
+      "youtubeUrl": "https://youtube.com/live/wzneIfcgXvM"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr5av",
+      "title": "Build an agent with MCP + Mastra ft. Matt Pocock",
+      "eventDate": "2025-05-01T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/p4j4g5l2",
+      "youtubeUrl": "https://youtube.com/live/pWnVTK-3V5U"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJVCX",
+      "title": "Vibe Coding: Tips/Tricks on How to Make Moves",
+      "eventDate": "2025-04-24T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/l44x9mya",
+      "youtubeUrl": "https://youtu.be/rVWewDk4W0g"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJUbc",
+      "title": "Building AI Voice Agents with Mastra and Roark",
+      "eventDate": "2025-04-17T16:00:00.000Z",
+      "lumaUrl": "https://luma.com/t10cn41y",
+      "youtubeUrl": "https://youtu.be/9Nr5t8AvwoU"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4IDw",
+      "title": "MCP + Mastra: Build a personal assistant agent",
+      "eventDate": "2025-04-10T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/ltcgxqbp",
+      "youtubeUrl": "https://youtu.be/h3tgZUV_8i4"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4HxK",
+      "title": "Build Agentic Workflows with Mastra",
+      "eventDate": "2025-04-03T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/ol89h2cz",
+      "youtubeUrl": "https://youtu.be/hyEKNlT-t4c"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4Hgi",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-03-27T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/cgvkrf2x",
+      "youtubeUrl": "https://youtu.be/WkJO0rXTf2A"
+    },
+    {
+      "sanityId": "UhrFXXaebw9Cm7yUML4HG8",
+      "title": "Demystifying MCP: Build a Code Agent with MCP and Mastra",
+      "eventDate": "2025-03-20T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/v27vfp8n",
+      "youtubeUrl": "https://youtu.be/9Q0etdIvad4"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJT9x",
+      "title": "Build Production-Ready RAG Applications with Mastra",
+      "eventDate": "2025-03-13T16:00:00.000Z",
+      "lumaUrl": "https://lu.ma/mka6l0ll",
+      "youtubeUrl": "https://youtu.be/12rQP6D1rAU"
+    },
+    {
+      "sanityId": "Nn6Sc6MF3u71woMpYpJSu8",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-03-06T17:00:00.000Z",
+      "lumaUrl": "https://lu.ma/n6pqqhyg",
+      "youtubeUrl": "https://youtu.be/lzXhJtHm_wM"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr3tR",
+      "title": "Master AI Evaluation: Build and Run Evals with Mastra",
+      "eventDate": "2025-02-27T17:00:00.000Z",
+      "lumaUrl": "https://lu.ma/o72wrgq8",
+      "youtubeUrl": "https://youtu.be/s0EgO40BAkQ"
+    },
+    {
+      "sanityId": "drafts.2a8Gb8rQw7SkcTZfLFRJfV",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-02-20T17:00:00.000Z",
+      "lumaUrl": "https://luma.com/kiyyq487",
+      "youtubeUrl": "https://youtu.be/_S4b6E1bNfQ"
+    },
+    {
+      "sanityId": "mebuq6EaBE5xLCmLiYr3Gl",
+      "title": "Build and deploy your first agent with Mastra",
+      "eventDate": "2025-02-13T17:00:00.000Z",
+      "lumaUrl": "https://lu.ma/vouvv9lq",
+      "youtubeUrl": "https://youtu.be/X7q5WzLrYGk"
+    }
+  ],
+  "dateMatching": {
+    "strategy": "closest stream by date, one-to-one",
+    "maxDaysDiff": 30,
+    "autoFilled": 20,
+    "stillEmpty": 1
+  }
+}

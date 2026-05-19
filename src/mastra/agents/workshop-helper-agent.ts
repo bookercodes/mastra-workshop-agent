@@ -8,6 +8,7 @@ import { uploadLumaImageTool } from "../tools/upload-luma-image-tool";
 import { searchSanityGuestsTool } from "../tools/search-sanity-guests-tool";
 import { createSanityGuestTool } from "../tools/create-sanity-guest-tool";
 import { writeDescriptionTool } from "../tools/write-description-tool";
+import { descriptionWriterAgent } from "./description-writer-agent";
 
 export const workshopHelperAgent = new Agent({
   id: "workshop-helper-agent",
@@ -20,7 +21,7 @@ Current date/time (UTC): ${new Date().toUTCString()}
 ## Workshop Defaults
 
 - Day: Thursday
-- Time: 17:00 UTC
+- Time: 17:00 Europe/London (local time, DST-aware)
 - Duration: 60 minutes
 
 ## Creating an Event
@@ -39,7 +40,7 @@ When the user mentions host names:
 When no date is specified:
 1. Call list-luma-events to check existing events
 2. Find the next Thursday without an event
-3. Use 17:00 UTC as the start time
+3. Use 17:00 Europe/London as the start time (DST-aware; this is 16:00 UTC during BST and 17:00 UTC during GMT)
 
 ## Writing Descriptions
 
@@ -53,6 +54,9 @@ When a description is needed:
 Ask for the event ID if not provided. Before making changes, call get-luma-event to see the current event details including the description. This lets you preserve existing information when updating.
 `,
   model: "openrouter/anthropic/claude-opus-4.6",
+  agents: {
+    descriptionWriterAgent,
+  },
   tools: {
     createLumaEvent: createLumaEventTool,
     updateLumaEvent: updateLumaEventTool,
@@ -61,7 +65,7 @@ Ask for the event ID if not provided. Before making changes, call get-luma-event
     uploadLumaImage: uploadLumaImageTool,
     searchSanityGuests: searchSanityGuestsTool,
     createSanityGuest: createSanityGuestTool,
-    writeDescription: writeDescriptionTool,
+    // writeDescription: writeDescriptionTool,
   },
   defaultOptions: {
     requireToolApproval: false,
