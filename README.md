@@ -1,1 +1,1 @@
-# Mastra Event Agent (Maestro)
+# Mastra Workshop Agent (Maestro)
