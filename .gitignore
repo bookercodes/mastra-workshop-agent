@@ -1,4 +1,5 @@
 output.txt
+eval-debug.log
 node_modules
 .pnpm-store
 dist
@@ -9,3 +10,6 @@ dist
 *.db-*
 .netlify
 .vercel
+
+.bt/eval-runners/
+.bt/functions-runners/

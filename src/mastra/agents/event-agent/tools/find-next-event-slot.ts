@@ -5,6 +5,9 @@ import { listLumaEvents } from '../../../lib/luma/client';
 const TIMEZONE = 'Europe/London';
 const DEFAULT_HOUR = 17;
 const WORKSHOP_WEEKDAYS = new Set([2, 4]);
+const WEEKDAY_NUMBERS = { Tuesday: 2, Thursday: 4 } as const;
+
+type WorkshopWeekday = keyof typeof WEEKDAY_NUMBERS;
 
 interface SkippedDate {
   localDate: string;
@@ -79,6 +82,7 @@ function toUtcDate(year: number, month: number, day: number, hour: number): Date
 export async function findNextEventSlot(
   duration: number,
   now = new Date(),
+  weekday?: WorkshopWeekday,
 ): Promise<EventSlot> {
   const events = await listLumaEvents();
   const today = getDateParts(now);
@@ -88,7 +92,8 @@ export async function findNextEventSlot(
   for (let dayOffset = 1; dayOffset <= 104 * 7; dayOffset += 1) {
     const candidate = new Date(calendarDate);
     candidate.setUTCDate(candidate.getUTCDate() + dayOffset);
-    if (!WORKSHOP_WEEKDAYS.has(candidate.getUTCDay())) {
+    const candidateWeekday = candidate.getUTCDay();
+    if (weekday ? candidateWeekday !== WEEKDAY_NUMBERS[weekday] : !WORKSHOP_WEEKDAYS.has(candidateWeekday)) {
       continue;
     }
 
@@ -124,14 +129,15 @@ export async function findNextEventSlot(
     };
   }
 
-  throw new Error('No free Tuesday or Thursday workshop date found in the next 104 weeks.');
+  throw new Error(`No free ${weekday || 'Tuesday or Thursday'} workshop date found in the next 104 weeks.`);
 }
 
 const findNextEventSlotTool = createTool({
   id: 'find-next-event-slot',
-  description: 'Deterministically find the next free workshop date on Tuesday or Thursday at 17:00 Europe/London. Returns the earliest available date and skips occupied dates automatically.',
+  description: 'Deterministically find the next free workshop date at 17:00 Europe/London. Optionally restrict the search to Tuesday or Thursday; otherwise returns the earliest available day and skips occupied dates automatically.',
   inputSchema: z.object({
     duration: z.number().int().positive().default(60).describe('Event duration in minutes (default: 60)'),
+    weekday: z.enum(['Tuesday', 'Thursday']).optional().describe('Restrict the result to this weekday when the user specifies one'),
   }),
   outputSchema: z.object({
     localDate: z.string().describe('Selected date in Europe/London as YYYY-MM-DD'),
@@ -147,8 +153,8 @@ const findNextEventSlotTool = createTool({
       })),
     })).describe('Candidate dates skipped because Luma already has an event on that London calendar date'),
   }),
-  execute: async ({ duration }) => {
-    return findNextEventSlot(duration);
+  execute: async ({ duration, weekday }) => {
+    return findNextEventSlot(duration, new Date(), weekday);
   },
 });
 
