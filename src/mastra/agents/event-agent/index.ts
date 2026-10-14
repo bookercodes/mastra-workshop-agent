@@ -1,3 +1,4 @@
+import { tools } from "@mastra/connect";
 import { Agent } from "@mastra/core/agent";
 import memory from "./memory";
 import { workshopDescriptionWriter } from "./skills/workshop-description-writer";
@@ -138,7 +139,7 @@ When deleting from both Luma and Sanity and the event ID is not provided, follow
     model: "openai/gpt-5.6-sol",
     memory,
     skills: [workshopDescriptionWriter],
-    tools: {
+    tools: tools().with({
       createSanityGuest,
       createWorkshop,
       deleteSanityWorkshop,
@@ -155,7 +156,7 @@ When deleting from both Luma and Sanity and the event ID is not provided, follow
       updateWorkshop,
       updateWorkshopCover,
       uploadLumaImage,
-    },
+    }),
     defaultOptions: {
       requireToolApproval: false,
     },
