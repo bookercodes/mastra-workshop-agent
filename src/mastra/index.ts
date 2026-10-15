@@ -1,5 +1,6 @@
 import { channels } from "@mastra/connect";
 import { Mastra } from "@mastra/core/mastra";
+import { SimpleAuth } from "@mastra/core/server";
 import { eventAgent } from "./agents/event-agent";
 import logger from "./config/logger";
 import observability from "./config/observability";
@@ -21,6 +22,10 @@ export const mastra = new Mastra({
     "event-agent": eventAgent,
   },
   channels: connectChannels,
+  server: {
+    // Reject direct API access; Platform Studio and Slack authenticate separately.
+    auth: new SimpleAuth({ tokens: {} }),
+  },
   logger,
   observability,
   storage,
